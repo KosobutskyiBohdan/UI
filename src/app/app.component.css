@@ -1,0 +1,114 @@
+.image-block {
+    width: 350;
+    height: 250;
+}
+
+.item-image{
+    display: inline-block;
+}
+
+.item-content {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.item-characteristics{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.characteristic-item {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.characteristic-item > span {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: black;
+}
+
+.characteristic-item > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+
+.state-num {
+    background-color: white;
+    border:  1px solid #07499d;
+    padding: 0 20px 0 20px;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 2px;
+    min-width: 70px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.state-num.ua:before{
+    background-color: blue;
+    font-size: 6px;
+    content: "UA";
+    color: white;
+    width: 11px;
+    text-align: center;
+    padding-top: 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.state-num.ua:after{
+    border-top: 3px solid #00a7ef;
+    border-bottom: 3px solid #fed500;
+    content: "";
+    width: 8px;
+    height: 0;
+    left: 1px;
+    top: 50%;
+    position: absolute;
+    margin-top: -7px;
+}
+
+.state-num.vin:before{
+    content: "VIN";
+    position: absolute;
+    left: 0;
+    background-color: #07499d;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    top: 0px;
+    bottom: 0;
+    width: 20px;
+}
+
+.state-num.vin label {
+    margin-left: 5px;
+}
+
+.row-container{
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.item-characteristics {
+    height: 40px;
+}
+
+.item-head,
+.item-price {
+    height: 70px;
+}
